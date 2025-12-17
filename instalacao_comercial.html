@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação Comercial</title>
+    <link rel="stylesheet" href="style.css"> <!-- seu CSS principal -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007acc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            color: #007acc;
+            margin-bottom: 15px;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .galeria img {
+            width: calc(50% - 15px);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a.back-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Instalação Comercial</h1>
+    </header>
+
+    <main>
+        <!-- Descrição do serviço -->
+        <section>
+            <h2>Sobre o Serviço</h2>
+            <p>Realizamos instalações elétricas completas para comércios e empresas, garantindo segurança, eficiência e conformidade com as normas técnicas. Nossos profissionais são especializados e utilizam materiais de qualidade para evitar problemas futuros.</p>
+        </section>
+
+        <!-- Galeria de imagens -->
+        <section>
+            <h2>Galeria de Imagens</h2>
+            <div class="galeria">
+                <img src="imagem_comercial1.jpg" alt="Instalação comercial 1">
+                <img src="imagem_comercial2.jpg" alt="Instalação comercial 2">
+                <img src="imagem_comercial3.jpg" alt="Instalação comercial 3">
+                <img src="imagem_comercial4.jpg" alt="Instalação comercial 4">
+            </div>
+        </section>
+
+        <!-- Vídeos do serviço -->
+        <section>
+            <h2>Vídeo Demonstrativo</h2>
+            <video controls>
+                <source src="video_comercial.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+        </section>
+
+        <!-- Link para voltar -->
+        <a href="index.html" class="back-link">← Voltar para os serviços</a>
+    </main>
+
+</body>
+</html>
