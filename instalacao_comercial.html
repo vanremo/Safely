@@ -1,106 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instalação Comercial</title>
-    <link rel="stylesheet" href="style.css"> <!-- seu CSS principal -->
+    
+    <!-- seu CSS principal -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #007acc;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        section h2 {
-            color: #007acc;
-            margin-bottom: 15px;
-        }
-        .galeria {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .galeria img {
-            width: calc(50% - 15px);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        video {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        a.back-link {
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #007acc;
-            font-weight: bold;
-        }
-        a.back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color: #007acc;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+      main {
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      section h2 {
+        color: #007acc;
+        margin-bottom: 15px;
+      }
+      .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
 
+      .galeria img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+      video {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+      a.back-link {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #007acc;
+        font-weight: bold;
+      }
+      a.back-link:hover {
+        text-decoration: underline;
+      }
+
+      /* BOTÃO DE AÇÃO */
+      .orcamento {
+        text-align: center;
+        margin: 35px 0;
+      }
+
+      .btn-orcamento {
+        display: inline-block;
+        background: var(--amarelo);
+        color: var(--preto);
+        padding: 14px 26px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Hover suave (elegante) */
+      .btn-orcamento:hover {
+        background: #f5c400; /* tom levemente mais forte */
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <h1>Instalação Comercial</h1>
+      <h1>Instalação Comercial</h1>
     </header>
 
     <main>
-        <!-- Descrição do serviço -->
-        <section>
-            <h2>Sobre o Serviço</h2>
-            <p>Realizamos instalações elétricas completas para comércios e empresas, garantindo segurança, eficiência e conformidade com as normas técnicas. Nossos profissionais são especializados e utilizam materiais de qualidade para evitar problemas futuros.</p>
-        </section>
+      <!-- Descrição do serviço -->
+      <section>
+        <h2>Sobre o Serviço</h2>
+        <p>
+          Realizamos instalações elétricas completas para comércios e empresas,
+          garantindo segurança, eficiência e conformidade com as normas
+          técnicas. Nossos profissionais são especializados e utilizam materiais
+          de qualidade para evitar problemas futuros.
+        </p>
+      </section>
 
-        <!-- Galeria de imagens -->
-        <section>
-            <h2>Galeria de Imagens</h2>
-            <div class="galeria">
-                <img src="imagem_comercial1.jpg" alt="Instalação comercial 1">
-                <img src="imagem_comercial2.jpg" alt="Instalação comercial 2">
-                <img src="imagem_comercial3.jpg" alt="Instalação comercial 3">
-                <img src="imagem_comercial4.jpg" alt="Instalação comercial 4">
-            </div>
-        </section>
+      <!-- Galeria de imagens -->
+      <section>
+        <h2>Antes • Durante • Depois</h2>
+        <div class="galeria">
+          <a
+            href="Assets/img/Instalacao_comercial/instalacao_comercial1.1.jpeg"
+            target="_blank"
+          >
+            <img
+              src="Assets/img/Instalacao_comercial/instalacao_comercial1.1.jpeg"
+              alt="Antes da instalação elétrica"
+            />
+          </a>
 
-        <!-- Vídeos do serviço -->
-        <section>
-            <h2>Vídeo Demonstrativo</h2>
-            <video controls>
-                <source src="video_comercial.mp4" type="video/mp4">
-                Seu navegador não suporta a reprodução de vídeo.
-            </video>
-        </section>
+          <a
+            href="Assets/img/Instalacao_comercial/instalacao_comercial1.2.jpeg"
+            target="_blank"
+          >
+            <img
+              src="Assets/img/Instalacao_comercial/instalacao_comercial1.2.jpeg"
+              alt="Durante o serviço elétrico"
+            />
+          </a>
 
-        <!-- Link para voltar -->
-        <a href="index.html" class="back-link">← Voltar para os serviços</a>
+          <a
+            href="Assets/img/Instalacao_comercial/instalacao_comercial1.3.jpeg"
+            target="_blank"
+          >
+            <img
+              src="Assets/img/Instalacao_comercial/instalacao_comercial1.3.jpeg"
+              alt="Serviço finalizado"
+            />
+          </a>
+        </div>
+
+        <h2>Antes • Durante • Depois</h2>
+        <div class="galeria">
+          <img
+            src="Assets/img/Instalacao_comercial/instalacao_comercial2.1.jpeg"
+            alt="Antes da instalação elétrica"
+          />
+          <img
+            src="Assets/img/Instalacao_comercial/instalacao_comercial2.2.jpeg"
+            alt="Durante o serviço elétrico"
+          />
+          <img
+            src="Assets/img/Instalacao_comercial/instalacao_comercial2.3.jpeg"
+            alt="Serviço finalizado"
+          />
+        </div>
+
+        <h2>Antes • Durante • Depois</h2>
+        <div class="galeria">
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Antes da instalação elétrica"
+          />
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Durante o serviço elétrico"
+          />
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Serviço finalizado"
+          />
+        </div>
+
+        <h2>Antes • Durante • Depois</h2>
+        <div class="galeria">
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Antes da instalação elétrica"
+          />
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Durante o serviço elétrico"
+          />
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Serviço finalizado"
+          />
+        </div>
+
+        <h2>Antes • Durante • Depois</h2>
+        <div class="galeria">
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Antes da instalação elétrica"
+          />
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Durante o serviço elétrico"
+          />
+          <img
+            src="Assets/img/Instalacao_residencial/residencial1.jpg"
+            alt="Serviço finalizado"
+          />
+        </div>
+        <!-- TEXTO DE APOIO -->
+        <p class="galeria-info">Clique nas imagens para ampliar 🔍</p>
+      </section>
+
+      <!-- BOTÃO DE AÇÃO -->
+      <div class="orcamento">
+        <a
+          class="btn-orcamento"
+          href="https://wa.me/5511992055870"
+          target="_blank"
+        >
+          💬 Solicitar orçamento para este serviço
+        </a>
+      </div>
+
+      <!-- Vídeos do serviço -->
+      <section>
+        <h2>Vídeo Demonstrativo</h2>
+        <video controls>
+          <source src="video_residencial.mp4" type="video/mp4" />
+          Seu navegador não suporta a reprodução de vídeo.
+        </video>
+      </section>
+
+      <!-- BOTÃO DE AÇÃO FINAL -->
+      <div class="orcamento">
+        <a
+          class="btn-orcamento"
+          href="https://wa.me/5511992055870"
+          target="_blank"
+        >
+          📞 Falar com um especialista agora
+        </a>
+      </div>
+
+      <!-- Link para voltar -->
+      <a href="index.html" class="back-link">← Voltar para os serviços</a>
     </main>
-
-</body>
+  </body>
 </html>

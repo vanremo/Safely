@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manutenção Elétrica</title>
-    <link rel="stylesheet" href="style.css"> <!-- seu CSS principal -->
+    
+    <!-- seu CSS principal -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #007acc;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        section h2 {
-            color: #007acc;
-            margin-bottom: 15px;
-        }
-        .galeria {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .galeria img {
-            width: calc(50% - 15px);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        video {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        a.back-link {
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #007acc;
-            font-weight: bold;
-        }
-        a.back-link:hover {
-            text-decoration: underline;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color: #007acc;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+      main {
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      section h2 {
+        color: #007acc;
+        margin-bottom: 15px;
+      }
+      .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .galeria img {
+        width: calc(50% - 15px);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      video {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      a.back-link {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #007acc;
+        font-weight: bold;
+      }
+      a.back-link:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>Manutenção Elétrica</h1>
+      <h1>Manutenção Elétrica</h1>
     </header>
 
     <main>
-        <!-- Descrição do serviço -->
-        <section>
-            <h2>Sobre o Serviço</h2>
-            <p>Oferecemos manutenção elétrica preventiva e corretiva para residências e comércios, garantindo serviços seguros, rápidos e dentro das normas técnicas. Nosso objetivo é prolongar a vida útil da sua instalação elétrica e evitar problemas futuros.</p>
-        </section>
+      <!-- Descrição do serviço -->
+      <section>
+        <h2>Sobre o Serviço</h2>
+        <p>
+          Oferecemos manutenção elétrica preventiva e corretiva para residências
+          e comércios, garantindo serviços seguros, rápidos e dentro das normas
+          técnicas. Nosso objetivo é prolongar a vida útil da sua instalação
+          elétrica e evitar problemas futuros.
+        </p>
+      </section>
 
-        <!-- Galeria de imagens -->
-        <section>
-            <h2>Galeria de Imagens</h2>
-            <div class="galeria">
-                <img src="imagem_manutencao1.jpg" alt="Manutenção elétrica 1">
-                <img src="imagem_manutencao2.jpg" alt="Manutenção elétrica 2">
-                <img src="imagem_manutencao3.jpg" alt="Manutenção elétrica 3">
-                <img src="imagem_manutencao4.jpg" alt="Manutenção elétrica 4">
-            </div>
-        </section>
+      <!-- Galeria de imagens -->
+      <section>
+        <h2>Galeria de Imagens</h2>
+        <div class="galeria">
+          <img src="imagem_manutencao1.jpg" alt="Manutenção elétrica 1" />
+          <img src="imagem_manutencao2.jpg" alt="Manutenção elétrica 2" />
+          <img src="imagem_manutencao3.jpg" alt="Manutenção elétrica 3" />
+          <img src="imagem_manutencao4.jpg" alt="Manutenção elétrica 4" />
+        </div>
+        <!-- TEXTO DE APOIO -->
+        <p class="galeria-info">Clique nas imagens para ampliar 🔍</p>
+      </section>
 
-        <!-- Vídeos do serviço -->
-        <section>
-            <h2>Vídeo Demonstrativo</h2>
-            <video controls>
-                <source src="video_manutencao.mp4" type="video/mp4">
-                Seu navegador não suporta a reprodução de vídeo.
-            </video>
-        </section>
+      <!-- Vídeos do serviço -->
+      <section>
+        <h2>Vídeo Demonstrativo</h2>
+        <video controls>
+          <source src="video_manutencao.mp4" type="video/mp4" />
+          Seu navegador não suporta a reprodução de vídeo.
+        </video>
+      </section>
 
-        <!-- Link para voltar -->
-        <a href="index.html" class="back-link">← Voltar para os serviços</a>
+      <!-- Link para voltar -->
+      <a href="index.html" class="back-link">← Voltar para os serviços</a>
     </main>
-
-</body>
+  </body>
 </html>
