@@ -64,6 +64,22 @@
       a.back-link:hover {
         text-decoration: underline;
       }
+      /* ===== RESPONSIVO ===== */
+      @media (max-width: 768px) {
+        .galeria-servicos {
+          grid-template-columns: 1fr;
+        }
+
+        .galeria-servicos img {
+          height: 180px;
+        }
+      }
+
+      @media (min-width: 1100px) {
+        .galeria-servicos {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
     </style>
   </head>
   <body>
@@ -86,11 +102,44 @@
       <!-- Galeria de imagens -->
       <section>
         <h2>Galeria de Imagens</h2>
-        <div class="galeria">
-          <img src="imagem_iluminacao1.jpg" alt="Iluminação 1" />
-          <img src="imagem_iluminacao2.jpg" alt="Iluminação 2" />
-          <img src="imagem_iluminacao3.jpg" alt="Iluminação 3" />
-          <img src="imagem_iluminacao4.jpg" alt="Iluminação 4" />
+        <div class="galeria-servicos">
+          <a href="Assets/img/iluminacao/iluminacao.1.jpeg" target="_blank">
+            <img
+              src="Assets/img/iluminacao/iluminacao.1.jpeg"
+              alt="iluminacao 1"
+            />
+          </a>
+
+          <a href="Assets/img/iluminacao/iluminacao.2.jpeg" target="_blank">
+            <img
+              src="Assets/img/iluminacao/iluminacao.2.jpeg"
+              alt="iluminacao 2"
+            />
+          </a>
+
+          <a href="Assets/img/iluminacao/iluminacao.3.jpeg" target="_blank">
+            <img
+              src="Assets/img/iluminacao/iluminacao.3.jpeg"
+              alt="iluminacao 3"
+            />
+          </a>
+
+          <a href="Assets/img/iluminacao/iluminacao.4.jpeg" target="_blank">
+            <img
+              src="Assets/img/iluminacao/iluminacao.4.jpeg"
+              alt="iluminacao 4"
+            />
+          </a>
+
+
+
+
+
+
+
+
+
+
         </div>
         <!-- TEXTO DE APOIO -->
         <p class="galeria-info">Clique nas imagens para ampliar 🔍</p>
